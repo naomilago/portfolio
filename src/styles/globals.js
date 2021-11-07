@@ -32,6 +32,10 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
 `;
 
 export default GlobalStyles;
