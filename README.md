@@ -1,6 +1,7 @@
 # Portfolio
 
-Welcome to my Portfolio source code. Here you can find, well... the source code. Also you'll be also finding more about the technologies I used and the inspirations I got through this project construction.
+
+Welcome to my Portfolio source code. Here you can find, well... the source code. Also you'll be also finding more about the technologies I used and the inspirations I got through this project construction. 
 
 ![image](https://i.ibb.co/7y6cWKH/index.jpg)
 
