@@ -36,6 +36,30 @@ const GlobalStyles = createGlobalStyle`
     display: none;
   }
 
+  .batatinha:after {
+    float: right;
+    right: 10%;
+    content: "▾";
+  }
+
+  .slide {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+  }
+
+  #touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+  }
+
+  #touch:checked + .slide {
+    height: 300px;
+  }
 `;
 
 export default GlobalStyles;

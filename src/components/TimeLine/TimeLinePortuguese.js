@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+import { TimeLineDataPortuguese } from '../../constants/constants';
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+const TOTAL_CAROUSEL_COUNT = TimeLineDataPortuguese.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -46,16 +46,16 @@ const Timeline = () => {
     <Section id='about'>
       <SectionDivider />
       <br />
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle>Sobre mim</SectionTitle>
       <SectionText style={{ textAlign: 'justify', maxWidth: '1040px' }}>
         <br />
-        &nbsp;&nbsp;At the age of 15, I started my technical course in Internet Computing and this allowed me to see technology with new eyes. Despite the difficult classes, initially, I started to venture into the many lines of code (including code flaws XD); I started to explore new horizons such as PHP, JavaScript, and Python languages. Having these visions and keeping in contact with these areas, even with small projects, made me realize that I really wanted to pursue a career in Information Technology (IT). <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;At the age of 17 I started my degree in Cyber Defense where, after getting to know the web development world, I found my real passion. What I hope for the future is that I can achieve my goals in working doing what I really like, being who I really am. <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;I am always open to discover and explore new technologies and this makes me very motivated 🙃
+        &nbsp;&nbsp;   Aos meus 15 anos eu iniciei meu curso técnico em Informática para Internet e isso me permitiu ver a tecnologia com outros olhares. Apesar das aulas difíceis, inicialmente, eu comecei a me aventurar pelas várias linhas de código (incluindo os bugs haha); comecei a explorar novos horizontes como as linguagens PHP, JavaScript, e Python. Ter essas visões e manter contato com essas áreas, mesmo que com projetos pequenos, me fez ver que eu realmente queria seguir uma carreira em Tecnologia da Informação (TI).<br />
+        &nbsp;&nbsp; Com 17 anos eu iniciei meu curso superior em Defesa Cibernética onde, após conhecer o mundo do desenvolvimento web, encontrei minha real paixão: cibersegurança. O que eu espero do futuro é que eu consiga atingir meus objetivos em trabalhar fazendo o que eu realmente gosto, sendo quem eu realmente sou.<br />
+        &nbsp;&nbsp;Estou sempre aberta a descobertas e explorações de novas tecnologias e isso me deixa bastante motivada 🙃
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
+          {TimeLineDataPortuguese.map((item, index) => (
             <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
               <CarouselItem index={index} id={`carousel__item-${index}`} active={activeItem} onClick={(e) => handleClick(e, index)}>
                 <CarouselItemTitle>
@@ -100,7 +100,7 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => (
+        {TimeLineDataPortuguese.map((item, index) => (
           <CarouselButton key={index} index={index} active={activeItem} onClick={(e) => handleClick(e, index)} type='button'>
             <CarouselButtonDot active={activeItem} />
           </CarouselButton>
